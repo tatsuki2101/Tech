@@ -1,0 +1,36 @@
+/* ページ全体の基本スタイル */
+body {
+    font-family: Arial, sans-serif; /* フォントを指定 */
+    background-color: #f4f4f4; /* 背景色を薄いグレーに設定 */
+    color: #333; /* 文字色を濃いグレーに設定 */
+    text-align: center; /* 全体の文字を中央揃え */
+}
+
+/* アプリ全体の中央寄せと幅の設定 */
+#app {
+    margin: 50px auto; /* 上下に50pxの余白を設定し、中央揃え */
+    width: 300px; /* アプリの幅を300pxに設定 */
+}
+
+/* 入力ボックスのスタイル */
+#new-task {
+    width: calc(100% - 50px); /* ボックス幅を親要素の幅から50px減らす */
+    padding: 10px; /* 内側の余白を10pxに設定 */
+    margin-bottom: 10px; /* 下部に余白を設定 */
+}
+
+/* タスクリスト全体の設定 */
+#task-list {
+    list-style: none; /* リストの箇条書きマークを削除 */
+    padding: 0; /* 内側の余白を削除 */
+}
+
+/* 各タスクのスタイル */
+#task-list li {
+    display: flex; /* 子要素を横並びに配置 */
+    justify-content: space-between; /* 左右に要素を配置 */
+    background: #fff; /* 背景色を白に設定 */
+    margin-bottom: 5px; /* 各タスクの間に余白を設定 */
+    padding: 10px; /* 内側の余白を設定 */
+    border-radius: 5px; /* 四隅を少し丸める */
+}
